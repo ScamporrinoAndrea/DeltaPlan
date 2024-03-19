@@ -1,0 +1,180 @@
+## INGREDIENTS ROUTES##
+
+## Retrieve all Ingredients
+GET http://localhost:3001/api/ingredients HTTP/1.1
+
+###
+
+## RECIPES ROUTES##
+
+## Retrieve all Recipes for a given meal type
+GET http://localhost:3001/api/recipes?meal=Breakfas HTTP/1.1
+
+###
+
+
+## INVENTORY ROUTES ##
+
+## Retrieve Inventory
+GET http://localhost:3001/api/inventory HTTP/1.1
+
+###
+
+## Retrieve First Three Items
+GET http://localhost:3001/api/inventory/first-three HTTP/1.1
+
+###
+
+## Insert Ingredient to the Inventory
+POST http://localhost:3001/api/inventory HTTP/1.1
+content-type: application/json
+
+{
+    "name": "AnotherOne",
+    "quantity": "100",
+    "unit_of_measure": "ml",
+    "expiration_date": "2024-03-08" 
+}
+
+###
+
+## Update Ingredient of the Inventory
+PUT http://localhost:3001/api/inventory/2 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Salt",
+    "quantity": "12",
+    "unit_of_measure": "g"
+}
+
+###
+
+## Remove Ingredient from the Inventory
+DELETE http://localhost:3001/api/inventory/1 HTTP/1.1
+content-type: application/json
+
+
+###
+
+
+## SHOPPING LIST ROUTES ##
+
+## Retrieve Shopping List ingredients
+GET http://localhost:3001/api/shopping-list HTTP/1.1
+
+###
+
+## Retrieve first 3 Shopping List ingredients to be bought
+GET http://localhost:3001/api/shopping-list/nearest-three HTTP/1.1
+
+###
+
+## Insert Ingredient to the Shopping List
+POST http://localhost:3001/api/shopping-list HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Ingredient",
+    "quantity": "500",
+    "unit_of_measure": "g",
+    "buy_by_date": "2024-12-22"
+}
+
+###
+
+## Update Ingredient of the Shopping List
+PUT http://localhost:3001/api/shopping-list/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Bread",
+    "quantity": "3",
+    "unit_of_measure": "prooof",
+    "buy_by_date": "2024-12-26"
+}
+
+###
+
+## Delete Ingredient from the Shopping List
+DELETE http://localhost:3001/api/shopping-list/4 HTTP/1.1
+content-type: application/json
+
+###
+
+## Mark Ingredient from the Shopping List as Bought and add it to the Inventory
+POST http://localhost:3001/api/shopping-list/bought/2 HTTP/1.1
+content-type: application/json
+
+{
+    
+}
+###
+
+
+## ACTIVITY ROUTES ##
+
+## Retrieve All Activities of a given Date
+GET http://localhost:3001/api/activities?date="2023-12-28" HTTP/1.1
+
+###
+
+## Retrieve first 3 Activities of today
+GET http://localhost:3001/api/activities/first-three HTTP/1.1
+
+###
+
+## Retrieve Activity for a given Id
+GET http://localhost:3001/api/activities/4 HTTP/1.1
+
+###
+
+## Add an activity
+POST http://localhost:3001/api/activities HTTP/1.1
+content-type: application/json
+
+{
+    "start_time": "23:30:23",
+    "end_time": "23:52:24",
+    "date": "2024-01-12",
+    "repeat": "n",
+    "type": "meal",
+    "title": "prova",
+    "meal_type": "Lunch",
+    "recipes": ["1", "3"],
+    "other_ingredients": [{"name": "straw", "quantity": "2", "unit_of_measure": ""}, {"name": "2", "quantity": "2", "unit_of_measure": "g"}]
+}
+
+###
+
+## Update an activity
+PUT http://localhost:3001/api/activities/5 HTTP/1.1
+content-type: application/json
+
+{
+    "start_time": "23:30:23",
+    "end_time": "23:59:24",
+    "date": "2024-01-19",
+    "repeat": "n",
+    "type": "meal",
+    "title": "prova",
+    "meal_type": "Breakfast",
+    "recipes": ["1", "3"],
+    "other_ingredients": [{"name": "berry", "quantity": "2", "unit_of_measure": ""}, {"name": "2", "quantity": 2, "unit_of_measure": "g"}]
+}
+
+###
+
+## Delete Activity
+DELETE http://localhost:3001/api/activities/1 HTTP/1.1
+content-type: application/json
+
+### 
+
+## Set Activity as Done
+POST http://localhost:3001/api/activities/3/done HTTP/1.1
+content-type: application/json
+
+{
+    "date": "2023-12-28"
+}

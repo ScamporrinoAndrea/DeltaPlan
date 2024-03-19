@@ -1,0 +1,222 @@
+:root {
+    --primary: #0092CA;
+    --secondary: #494E55;
+}
+
+/*********    Home    *********/
+.logo-home {
+    width: 40px;
+}
+
+.header-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.custom-card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(246, 246, 246) !important;
+    /* background-color: rgba(0, 146, 202, 0.1) !important; */
+    padding: 0 !important;
+}
+
+.custom-card-title {
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.custom-card-header {
+    padding: 6px 9px;
+    background-color: var(--primary) !important;
+    color: white;
+    border-radius: 6px 6px 0 0;
+    z-index: 1;
+}
+
+.current-day {
+    /* border-radius: 20px;
+    background-color: var(--primary) !important;
+    color: white !important; */
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.vertical-line {
+    border-left: 1px solid rgb(219, 220, 220) !important;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.event-hour {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: smaller;
+}
+
+.event-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 7px;
+}
+
+.custom-radio .form-check-input[type='radio'] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    outline: none;
+}
+
+.custom-radio .form-check-input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 20% auto;
+    border-radius: 50%;
+}
+
+.custom-radio .form-check-input[type='radio']:checked:before {
+    background: var(--primary);
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.modal-dialog-bottom .modal-content {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+
+.modal-dialog-bottom.modal-open .modal-content {
+    animation: slideUp 0.3s ease-out, backgroundColorChange 0.3s ease-out;
+}
+
+.modal-dialog-bottom.modal-close .modal-content {
+    animation: slideDown 0.3s ease-out, backgroundColorChange 0.3s ease-out reverse;
+}
+
+
+/*********    Calendar    *********/
+
+.header-title2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.calendar-current-day {
+    color: white !important;
+    background-color: rgba(0, 146, 202, 0.5) !important;
+    border-color: transparent !important;
+}
+
+.calendar-selected-day {
+    color: white !important;
+    background-color: var(--primary) !important;
+    border-color: transparent !important;
+}
+
+.calendar-other-day {
+    background-color: rgba(0, 0, 0, 0.06) !important;
+    border-color: transparent !important;
+}
+
+.activity-card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 0 !important;
+    width: 100% !important;
+    margin-bottom: 25px !important;
+}
+
+.button-done {
+    position: fixed;
+    bottom: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 50px;
+    width: 230px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    height: 40px;
+    cursor: pointer;
+}
+
+.vertical-line2 {
+    border-left: 1px solid rgb(219, 220, 220) !important;
+    height: 100%;
+    position: absolute;
+    left: 78%;
+    top: 0;
+}
+
+.active-button-done {
+    background-color: rgb(219, 220, 220);
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.not-active {
+    border: 1px solid transparent;
+}
+
+/*********    Shopping List    *********/
+.header-title3 {
+    font-size: 16px;
+    font-weight: 600;
+    text-indent: 3px;
+}
+
+/*********    General    *********/
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
