@@ -5,10 +5,24 @@
 DeltaPlan is the application we created for the `Human Computer Interaction` course, academic year 2023-24, on the topic of `Health & Wellbeing`.<br>
 For a young adult who has recently started living on their own or is just inexperienced, managing their diet can be a challenging task. DeltaPlan is a useful tool that allows users to plan their meals and activities.
 
-![DeltaPlan Home page](images/Home_Page.png)
-![DeltaPlan Calendar](images/Calendar.png)
-![DeltaPlan  Shopping List](images/Shopping_List.png)
-![DeltaPlan Inventory](images/Inventory.png)
+<p align="center">
+  <img src="images/Home_Page.png" alt="DeltaPlan Home page" width="300">
+  <img src="images/Calendar.png" alt="DeltaPlan Calendar" width="300">
+</p>
+
+<p align="center">
+  <img src="images/Shopping_List.png" alt="DeltaPlan Shopping List" width="300">
+  <img src="images/Inventory.png" alt="DeltaPlan Inventory" width="300">
+</p>
+
+<p align="center">
+  <img src="images/added_to_shoppinglist_notify.png" alt="DeltaPlan Notification" width="300">
+  <img src="images/Swipe.png" alt="DeltaPlan Swipe" width="300">
+</p>
+
+## 📄 Project Report  
+For a detailed analysis of the problem, design process, and usability testing of DeltaPlan, check out the full report:  
+[Final Report](docs/Final_Report_GAF.pdf)
 
 ## Members
 - Mangani Fabio s313373
