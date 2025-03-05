@@ -5,6 +5,10 @@
 DeltaPlan is the application we created for the `Human Computer Interaction` course, academic year 2023-24, on the topic of `Health & Wellbeing`.<br>
 For a young adult who has recently started living on their own or is just inexperienced, managing their diet can be a challenging task. DeltaPlan is a useful tool that allows users to plan their meals and activities.
 
+![DeltaPlan Home page](images/Home_Page.png)
+![DeltaPlan Calendar](images/Calendar.png)
+![DeltaPlan  Shopping List](images/Shopping_List.png)
+![DeltaPlan Inventory](images/Inventory.png)
 
 ## Members
 - Mangani Fabio s313373
